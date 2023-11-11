@@ -6,7 +6,7 @@ module "ec2_instance" {
   instance_type          = "t2.micro"
   ami = "ami-03265a0778a880afb"  # devopsprac cetos8
   vpc_security_group_ids = [aws_security_group.allow_tls.id]
-  subnet_id              = "subnet-038c44dfac7dca52e"
+  subnet_id              = "subnet-0e272d1e375a13bd2"
     user_data = file("docker.sh")
   tags = {
     Terraform   = "true"
